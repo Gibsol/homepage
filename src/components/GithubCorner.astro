@@ -1,7 +1,12 @@
-<a
-  href="https://your-url"
-  class="github-corner"
-  aria-label="View source on GitHub"
+---
+export interface Props {
+  link: string;
+}
+
+const { link } = Astro.props;
+---
+
+<a href={link} class="github-corner" aria-label="View source on GitHub"
   ><svg
     width="80"
     height="80"
