@@ -1,10 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.astro";
+import GithubCorner from "../components/GithubCorner.astro";
+import SocialButton from "../components/SocialButton.astro";
 ---
 
 <Layout title="Gibsol / Home">
   <main>
+    <GithubCorner />
     <div class="container">
       <h1 class="main-title">Gibsol</h1>
       <p class="main-about">
@@ -13,7 +16,18 @@ import Button from "../components/Button.astro";
       </p>
       <div class="buttons">
         <Button link="/about" body="About Me" />
-        <Button link="/work" body="My Work" />
+      </div>
+      <div class="socials">
+        <SocialButton icon="fa fa-github" link="https://github.com/gibsol" />
+        <SocialButton icon="fa fa-twitter" link="https://twitter.com/GibsolP" />
+        <SocialButton
+          icon="fa fa-linkedin"
+          link="https://www.linkedin.com/in/paul-bogatyr-65945524b/"
+        />
+        <SocialButton
+          icon="fa fa-soundcloud"
+          link="https://soundcloud.com/gibsol"
+        />
       </div>
     </div>
   </main>
@@ -37,11 +51,27 @@ import Button from "../components/Button.astro";
     font-size: 24pt;
   }
   .container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+  }
+  @media (max-width: 768px) {
+    .container {
+      height: 85vh;
+    }
   }
   .buttons {
     display: flex;
     justify-content: center;
     gap: 1rem;
+  }
+  .socials {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
   }
 </style>
