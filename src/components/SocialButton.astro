@@ -1,0 +1,27 @@
+---
+export interface Props {
+  icon: string;
+  link: string;
+}
+
+const { icon, link } = Astro.props;
+---
+
+<a href={link} class={icon}></a>
+
+<style>
+  a {
+    background-color: #fff;
+    color: #fb2576;
+    border-radius: 50%;
+    padding: 10px;
+    text-decoration: none;
+    width: 30px;
+    font-size: 25px !important;
+    transition-duration: 0.4s;
+  }
+  a:hover {
+    color: #fff;
+    background-color: #fb2576;
+  }
+</style>
