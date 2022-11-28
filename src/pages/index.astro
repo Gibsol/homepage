@@ -5,7 +5,7 @@ import GithubCorner from "../components/GithubCorner.astro";
 import SocialButton from "../components/SocialButton.astro";
 ---
 
-<Layout title="Gibsol / Home">
+<Layout title="Gibsol | Home">
   <main>
     <GithubCorner link="https://github.com/gibsol/homepage" />
     <div class="container">
@@ -14,9 +14,6 @@ import SocialButton from "../components/SocialButton.astro";
         A full-stack developer from Estonia with a passion for creating and
         learning awesome stuff.
       </p>
-      <div class="buttons">
-        <Button link="/about" body="About Me" />
-      </div>
       <div class="socials">
         <SocialButton icon="fa fa-github" link="https://github.com/gibsol" />
         <SocialButton icon="fa fa-twitter" link="https://twitter.com/GibsolP" />
@@ -28,6 +25,9 @@ import SocialButton from "../components/SocialButton.astro";
           icon="fa fa-soundcloud"
           link="https://soundcloud.com/gibsol"
         />
+      </div>
+      <div class="buttons">
+        <Button link="/about" body="About Me" />
       </div>
     </div>
   </main>
@@ -41,14 +41,14 @@ import SocialButton from "../components/SocialButton.astro";
   }
   .main-title {
     color: #fff;
-    font-size: 72px !important;
-    font-size: 3rem;
+    font-size: 62px;
     font-weight: 800;
     margin: 0;
+    font-style: italic;
   }
   .main-about {
     color: #fb2576;
-    font-size: 24pt;
+    font-size: 21px;
   }
   .container {
     display: flex;
@@ -56,11 +56,21 @@ import SocialButton from "../components/SocialButton.astro";
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+  }
+  @media (min-width: 768px) {
+    .container {
+      height: 80vh;
+    }
   }
   @media (max-width: 768px) {
     .container {
-      height: 85vh;
+      height: 90vh;
+    }
+    .main-title {
+      font-size: 60px !important;
+    }
+    .main-about {
+      font-size: 22px !important;
     }
   }
   .buttons {
@@ -69,7 +79,7 @@ import SocialButton from "../components/SocialButton.astro";
     gap: 1rem;
   }
   .socials {
-    margin-top: 3rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
     gap: 10px;
