@@ -11,6 +11,8 @@ A static homepage made with [Astro](https://astro.build/)
 ├── src/
 │   ├── components/
 │   │   └── Button.astro
+│   │   └── SocialButton.astro
+│   │   └── GithubCorner.astro
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
