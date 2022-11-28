@@ -1,0 +1,73 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+---
+
+<Layout title="Gibsol / About">
+  <main>
+    <div class="container">
+      <h1 class="main-title">About Me</h1>
+      <h2 class="about-subtitle">Online</h2>
+      <p class="about-paragraph">
+        Maecenas lacus elit, vehicula id lacinia consequat, tempor nec odio.
+        Praesent nulla nisl, accumsan nec dui vel, euismod aliquam nisl. Donec
+        ut sem non neque dignissim viverra. Mauris varius mattis hendrerit.
+        Fusce nibh nisi, dapibus non lectus fermentum, efficitur condimentum
+        metus. Proin ornare tristique enim nec tincidunt. Ut imperdiet nibh at
+        tortor tempor, non accumsan leo gravida. Etiam scelerisque ut ante non
+        ullamcorper. Curabitur a elit nisl. Donec congue arcu nibh, ut egestas
+        massa fringilla et. In porttitor lectus eu nunc bibendum, et placerat
+        tellus cursus. Aenean vehicula mattis ipsum eu pellentesque. Interdum et
+        malesuada fames ac ante ipsum primis in faucibus. Vestibulum malesuada
+        turpis orci.
+      </p>
+      <h2 class="about-subtitle">Offline</h2>
+      <p class="about-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu
+        aliquet augue, sed tincidunt libero. Nulla ac imperdiet odio. Sed sed
+        tellus sit amet neque sodales congue sed ut magna. Vestibulum
+        consectetur porta odio, eu ultrices ante tincidunt vitae. Vestibulum
+        euismod lacus non leo tempor interdum. Vivamus rutrum dignissim mollis.
+        Maecenas accumsan placerat enim.
+      </p>
+      <div class="buttons">
+        <Button link="/" body="Home" />
+        <Button link="/work" body="My Work" />
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 2rem;
+    max-width: 100ch;
+  }
+  .main-title {
+    color: #fff;
+    font-size: 72px !important;
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .main-about {
+    color: #fb2576;
+    font-size: 24pt;
+  }
+  .container {
+  }
+  .about-subtitle {
+    color: #fb2576;
+    font-size: 36pt;
+  }
+  .about-paragraph {
+    color: #fff;
+    font-size: 18pt;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+</style>

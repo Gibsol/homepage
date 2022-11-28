@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+---
+
+<Layout title="Gibsol / Home">
+  <main>
+    <div class="container">
+      <h1 class="main-title">Gibsol</h1>
+      <p class="main-about">
+        A full-stack developer from Estonia with a passion for creating and
+        learning awesome stuff.
+      </p>
+      <div class="buttons">
+        <Button link="/about" body="About Me" />
+        <Button link="/work" body="My Work" />
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+  }
+  .main-title {
+    color: #fff;
+    font-size: 72px !important;
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .main-about {
+    color: #fb2576;
+    font-size: 24pt;
+  }
+  .container {
+    text-align: center;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+</style>
