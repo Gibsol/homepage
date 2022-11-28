@@ -5,7 +5,6 @@ A static homepage made with [Astro](https://astro.build/)
 ## Project Structure
 
 ```
-/
 ├── public/
 │   └── favicon.svg
 ├── src/
