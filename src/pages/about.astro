@@ -9,26 +9,22 @@ import Button from "../components/Button.astro";
       <h1 class="main-title">About Me</h1>
       <h2 class="about-subtitle">Online</h2>
       <p class="about-paragraph">
-        Maecenas lacus elit, vehicula id lacinia consequat, tempor nec odio.
-        Praesent nulla nisl, accumsan nec dui vel, euismod aliquam nisl. Donec
-        ut sem non neque dignissim viverra. Mauris varius mattis hendrerit.
-        Fusce nibh nisi, dapibus non lectus fermentum, efficitur condimentum
-        metus. Proin ornare tristique enim nec tincidunt. Ut imperdiet nibh at
-        tortor tempor, non accumsan leo gravida. Etiam scelerisque ut ante non
-        ullamcorper. Curabitur a elit nisl. Donec congue arcu nibh, ut egestas
-        massa fringilla et. In porttitor lectus eu nunc bibendum, et placerat
-        tellus cursus. Aenean vehicula mattis ipsum eu pellentesque. Interdum et
-        malesuada fames ac ante ipsum primis in faucibus. Vestibulum malesuada
-        turpis orci.
+        I have a good knowledge of
+        <span class="highlight"> programming and problem solving.</span>
+        I have an experience of working with technologies such as <span
+          class="highlight"
+        >
+          JavaScript, React, Python, HTML/CSS, C++.</span
+        > Although I don't not everything, I am always interested in discovering
+        new things for myself and am not afraid to have experience with technologies
+        unfamiliar to me.
       </p>
       <h2 class="about-subtitle">Offline</h2>
       <p class="about-paragraph">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu
-        aliquet augue, sed tincidunt libero. Nulla ac imperdiet odio. Sed sed
-        tellus sit amet neque sodales congue sed ut magna. Vestibulum
-        consectetur porta odio, eu ultrices ante tincidunt vitae. Vestibulum
-        euismod lacus non leo tempor interdum. Vivamus rutrum dignissim mollis.
-        Maecenas accumsan placerat enim.
+        At my freetime I enjoy <span class="highlight">
+          self-studying, playing musical instruments, and learning new languages
+          and cultures.</span
+        >
       </p>
       <div class="buttons">
         <Button link="/" body="Home" />
@@ -42,6 +38,9 @@ import Button from "../components/Button.astro";
     margin: auto;
     padding: 2rem;
     max-width: 100ch;
+  }
+  .highlight {
+    font-weight: 900;
   }
   .main-title {
     text-align: center;
