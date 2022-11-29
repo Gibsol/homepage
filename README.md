@@ -1,5 +1,7 @@
 # Gibsol's Homepage
 
+https://gibsol.dev
+
 A static homepage made with [Astro](https://astro.build/)
 
 ## Project Structure
